@@ -1,5 +1,5 @@
 
-var url = "http://faircorp-nestor-hdlt.cleverapps.io/api/lights/";
+var url = "http://192.168.1.131/api/T2mvaglBjVBhS4sVulI2e-VKB0fgMxOCVCMS9Keo/lights/";
 
 // GET AVEC Vue.Js
 
@@ -42,9 +42,10 @@ var vm_get_ligths = new Vue({
 		},
 		light_switch: async function(light_id){
 			this.light_id = light_id;
-			var put_url = url + light_id + "/switch";
+			// var put_url = url + light_id + "/switch";
+			var put_url = url + light_id + "/state"
 			let light_switch = await axios
-			.put(put_url)
+			.put(put_url,'{"on":true}')
 			.then(response => {
 				this.get();
 			})

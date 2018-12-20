@@ -11,7 +11,7 @@
 	<script src="//unpkg.com/vue"></script>
 	<!-- axios -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
-	<script type="text/javascript" src="js/main.js" async></script>
+	<script type="text/javascript" src="js/vue.js" async></script>
 </head>
 
 <body>
@@ -45,9 +45,9 @@
 						<tbody>
 
 							<tr v-for="light in lights">
-								<td>{{light.id}}</td>
-								<td>{{light.level}}</td>
-								<td>{{light.status}}</td>
+								<td>{{light.productid}}</td>
+								<td>{{light.state.bri}}</td>
+								<td>{{light.state.on}}</td>
 								<td>{{light.roomId}}</td>
 								<td>
 									<button @click="light_switch(light.id);" >
