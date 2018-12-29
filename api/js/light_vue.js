@@ -47,9 +47,8 @@ var vm_get_ligths = new Vue({
 		},
 		light_switch: async function(light_id){
 			this.light_id = light_id;
-			console.log(light_id);
-			// var put_url = url + light_id + "/switch";
-			var put_url = url + light_id + "/state"
+			var put_url = url + light_id + "/switch";
+			// var put_url = url + light_id + "/state"
 			let light_switch = await axios
 			.put(put_url,'{"on":true}')
 			.then(response => {

@@ -45,9 +45,9 @@
 						<tbody>
 
 							<tr v-for="light in lights">
-								<td>{{light.productid}}</td>
-								<td>{{light.state.bri}}</td>
-								<td>{{light.state.on}}</td>
+								<td>{{light.id}}</td>
+								<td>{{light.level}}</td>
+								<td>{{light.status}}</td>
 								<td>{{light.roomId}}</td>
 								<td>
 									<button @click="light_switch(light.id);" >

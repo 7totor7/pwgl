@@ -1,5 +1,5 @@
 
-var url = "http://192.168.1.131/api/T2mvaglBjVBhS4sVulI2e-VKB0fgMxOCVCMS9Keo/lights/";
+var url = "http://localhost:8080/api/lights/";
 
 // GET AVEC Vue.Js
 
